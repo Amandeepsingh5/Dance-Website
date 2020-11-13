@@ -5,8 +5,13 @@ html
     style
       include ../static/style.css
   body
+    
     nav#navbar
         ul
+
+            div#logo
+                img(src="/static/img/1.png" style=" height: 32px" )
+                |  ADA
             li #[a(href='/')  Home]
             li #[a(href='/')  About]
             li #[a(href='/')  Services]
@@ -16,6 +21,35 @@ html
     section#introSection
         div Welcome to Aman's Dance Academy
         div.small Eat Sleep Dance Repeat
+
+    section#headingSection
+        h2 Our Mission
+
+    section#missionSection 
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png" style=" height: 120px")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png" style=" height: 125px")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.jpg" style=" height: 125px; margin-left:10px;")
+
+                div.card-content
+                    p This is the best dance academy of the universe
 
     section#sponsorsSection
         h3 Our Proud Sponsors

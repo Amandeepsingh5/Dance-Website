@@ -6,9 +6,25 @@
 
 }
 
+#logo{
+
+    display: flex;
+    color: black;
+    align-items: center;
+    margin: 0px 14px;
+    font-weight: bold;
+    font-size: 23px;
+    margin-right: 40px;
+    
+}
+
+#logo img{
+    
+}
+
 
 #navbar {
-    background-color: aquamarine;
+    background-color: red;
     padding: 14px 4px;
         }
 
@@ -19,13 +35,15 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
     top: 0px;
+    align-items: center;
 }
 
 #navbar li{
 
 list-style: none;
+
+
 }
 
 #navbar li a{
@@ -35,12 +53,12 @@ list-style: none;
     padding: 7px 11px;
     margin: 13px 13px;
     font-weight: bold;
-
+    color: black;
 }
 
 #navbar li a:hover{
 
-   color: azure;
+   color: white;
 
 }
 
@@ -78,6 +96,55 @@ list-style: none;
     justify-content: center;
     padding-top: 12px;
     font-size: 25px;
+}
+
+#headingSection h2{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+#missionSection{
+    height: 286px; 
+    width: 67%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#missionSection h2{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 20px;
+    height: 209px;
+}
+.card h3{
+    text-align: center;
+    margin: 0 12px;
+    margin-top: 24px;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content{
+
+    margin: 2px;
 }
 
 #footer{
