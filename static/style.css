@@ -147,9 +147,49 @@ list-style: none;
     margin: 2px;
 }
 
+
+
+.card-image{
+
+   
+   justify-content: center;
+   align-items: center;
+
+}
+
+#sponsorsSection h2{
+
+    margin: 20px;
+    top: 0px;
+     
+
+
+}
+#sponsors{
+    height: 120px;
+    max-width: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.spImage{
+    height: 130px;
+    margin: 60px;
+}
+
+
+
+
 #footer{
 
-    height: 100px;
+    height: 35px;
     background-color: black;
+    justify-content: centet;
+    text-align: center;
+    align-items: center;
+    color: white;
 
 }
