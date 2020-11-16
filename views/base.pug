@@ -1,0 +1,23 @@
+//- index.pug
+doctype html
+html
+  head
+    title Harry Dance Academy
+    block scripts
+    block style
+      script(src= '/jquery.js')
+  body
+    nav#navbar
+        ul
+
+            div#logo
+                img(src="/static/img/1.png" style=" height: 32px" )
+                |  ADA
+            li #[a(href='/')  Home]
+            li #[a(href='/')  About]
+            li #[a(href='/')  Services]
+            li #[a(href='/') Class Info]
+            li #[a(href='/')  Contact Us]
+    block content
+    footer#footer
+        | Copyright © 2020 AmanDanceAcademy.com | All Rights Reserved

@@ -1,0 +1,51 @@
+extends base.pug
+
+block scripts
+    script(src='../static/index.js')
+  
+block style
+    style
+        include ../static/style.css
+    
+block content
+    section#introSection
+        div Welcome to Aman's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#headingSection
+        h2 Our Mission
+
+    section#missionSection 
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png" style=" height: 120px")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png" style=" height: 125px")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.jpg" style=" height: 125px; margin-left:10px;")
+
+                div.card-content
+                    p This is the best dance academy of the universe
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors
+          img(src= "../static/img/11.png", alt= "sponsor Image", class= "spImage")
+          img(src= "../static/img/22.png", alt= "sponsor Image", class= "spImage")
+          img(src= "../static/img/33.png", alt= "sponsor Image", class= "spImage")
+          img(src= "../static/img/44.png", alt= "sponsor Image", class= "spImage")
+
