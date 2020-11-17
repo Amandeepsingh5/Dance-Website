@@ -40,8 +40,15 @@ app.get('/contact', (req, res)=>{
 })
 
 app.post('/contact', (req, res)=>{
-    const params = {}
-    res.status(200).render('contact.pug', params);
+
+    var myData = new Contact(req.body);
+    myData.save().then(()=>{
+
+        res.send("this item has been saved to the datbase")
+    }).catch(()=>{
+
+     res.status(400).send("the item has NOT been saved to the database")
+    });
 })
 
 
