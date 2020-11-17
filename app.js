@@ -3,7 +3,21 @@ const path = require("path");
 const fs = require("fs");
 const app = express();
 const port = 8000;
+var mongoose = require('mongoose');
+const bodyparser = require("body-parser");
 
+mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true});
+
+
+var contactDance = new mongoose.Schema({
+    name: String,
+    phone: String,
+    email: String,
+    address: String,
+    desc: String
+  });
+
+  var Contact = mongoose.model('Contact', contactDance);
 
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')) // For serving static files
@@ -24,6 +38,12 @@ app.get('/contact', (req, res)=>{
     const params = {}
     res.status(200).render('contact.pug', params);
 })
+
+app.post('/contact', (req, res)=>{
+    const params = {}
+    res.status(200).render('contact.pug', params);
+})
+
 
 
 // START THE SERVER
